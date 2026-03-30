@@ -22,7 +22,33 @@ Repositório com as resoluções da atividade de **Estruturas de Dados / Program
 
 ---
 
-## ❓ Questão 1 — Ponteiros e Endereços de Memória
+## ❓ Questão 1 — Compreensão de Ponteiros e Endereços de Memória
+
+**Arquivo:** `questao1/ponteiros.c`
+
+### Enunciado
+
+O programa a seguir manipula variáveis e ponteiros em C. Pede-se:
+
+- **a)** Mostrar, passo a passo (teste de mesa), as mudanças nos valores de `a` e `b`.
+- **b)** Explicar o que acontece na memória quando a instrução `p = q` é executada.
+- **c)** Informar os valores impressos na tela ao final da execução.
+
+```c
+int main(void) {
+    int a = 5, b = 12;
+    int *p, *q;
+    p = &a;
+    q = &b;
+    *p = *q + 3;
+    b = *p * 2;
+    p = q;
+    *p = 10;
+    printf("A = %d\n", a);
+    printf("B = %d\n", b);
+    return 0;
+}
+```
 
 ### Teste de mesa
 
@@ -49,7 +75,18 @@ B = 10
 
 ---
 
-## ❓ Questão 2 — Vetor de Structs (Funcionários)
+## ❓ Questão 2 — Vetores de Tipos Abstratos de Dados (Structs)
+
+**Arquivo:** `questao2/funcionarios.c`
+
+### Enunciado
+
+Considere um sistema de controle de funcionários. Cada funcionário possui código (int), nome (char[]) e salário (float). Pede-se:
+
+- **a)** Definir uma `struct` chamada `Funcionario` com os campos descritos.
+- **b)** Na `main`, declarar um vetor de até 50 funcionários e ler a quantidade `N` com validação por laço (1 ≤ N ≤ 50).
+- **c)** Implementar a função `cadastrarFuncionarios` que receba o vetor e `N` e leia os dados via teclado.
+- **d)** Implementar a função `imprimirAcimaMedia` que calcule a média salarial e imprima apenas os funcionários que ganham estritamente acima dela.
 
 ### Struct utilizada
 
@@ -99,6 +136,16 @@ Funcionarios com salario ACIMA da media:
 ---
 
 ## ❓ Questão 3 — Ponteiros para Structs e Passagem por Referência
+
+**Arquivo:** `questao3/aumento.c`
+
+### Enunciado
+
+Em C, para alterar os dados originais de uma variável dentro de uma função é necessário passar seu endereço (ponteiro) e usar o operador `->` para acessar os campos da struct. Pede-se:
+
+- **a)** Utilizar a mesma `struct Funcionario` da questão anterior.
+- **b)** Criar a função `aplicarAumento(struct Funcionario *f, float percentual)` que receba um ponteiro para funcionário e calcule/atualize o salário com o percentual informado.
+- **c)** Na `main`, declarar uma variável do tipo `Funcionario`, imprimir o salário original, chamar `aplicarAumento` passando `&func` e 10%, e imprimir o salário atualizado para comprovar que a alteração ocorreu no escopo da `main`.
 
 ### Função implementada
 
