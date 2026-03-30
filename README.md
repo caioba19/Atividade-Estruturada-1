@@ -51,8 +51,6 @@ B = 10
 
 ## ❓ Questão 2 — Vetor de Structs (Funcionários)
 
-**Arquivo:** `questao2/funcionarios.c`
-
 ### Struct utilizada
 
 ```c
@@ -101,8 +99,6 @@ Funcionarios com salario ACIMA da media:
 ---
 
 ## ❓ Questão 3 — Ponteiros para Structs e Passagem por Referência
-
-**Arquivo:** `questao3/aumento.c`
 
 ### Função implementada
 
