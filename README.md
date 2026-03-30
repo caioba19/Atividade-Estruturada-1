@@ -24,8 +24,6 @@ Repositório com as resoluções da atividade de **Estruturas de Dados / Program
 
 ## ❓ Questão 1 — Compreensão de Ponteiros e Endereços de Memória
 
-**Arquivo:** `questao1/ponteiros.c`
-
 ### Enunciado
 
 O programa a seguir manipula variáveis e ponteiros em C. Pede-se:
@@ -76,8 +74,6 @@ B = 10
 ---
 
 ## ❓ Questão 2 — Vetores de Tipos Abstratos de Dados (Structs)
-
-**Arquivo:** `questao2/funcionarios.c`
 
 ### Enunciado
 
@@ -136,8 +132,6 @@ Funcionarios com salario ACIMA da media:
 ---
 
 ## ❓ Questão 3 — Ponteiros para Structs e Passagem por Referência
-
-**Arquivo:** `questao3/aumento.c`
 
 ### Enunciado
 
