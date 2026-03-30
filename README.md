@@ -24,8 +24,6 @@ Repositório com as resoluções da atividade de **Estruturas de Dados / Program
 
 ## ❓ Questão 1 — Ponteiros e Endereços de Memória
 
-**Arquivo:** `questao1/ponteiros.c`
-
 ### Teste de mesa
 
 | Instrução | `a` | `b` | `p` aponta para | `q` aponta para |
