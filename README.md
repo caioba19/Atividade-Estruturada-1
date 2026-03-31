@@ -165,20 +165,3 @@ Salario original   : R$ 3000.00
 Salario apos +10%  : R$ 3300.00
 ================================================
 ```
-
----
-
-## ⚙️ Como compilar e executar
-
-Qualquer compilador C (GCC recomendado):
-
-```bash
-# Questão 1
-gcc questao1/ponteiros.c -o q1 && ./q1
-
-# Questão 2
-gcc questao2/funcionarios.c -o q2 && ./q2
-
-# Questão 3
-gcc questao3/aumento.c -o q3 && ./q3
-```
